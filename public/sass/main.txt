@@ -1,0 +1,528 @@
+  
+/*polices couleur keyframes et mixins*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+
+$colour-primary: #579c87;
+$colour-secondary: #fdcb46;
+
+@keyframes animation-btnfooter {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(8deg);
+  }
+  0% {
+    transform: rotate(8deg);
+  }
+  100% {
+    transform: rotate(-8deg);
+  }
+}
+@keyframes animation-point {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@mixin degradewebkit {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin fondbody {
+  height: 100%;
+  width: 80%;
+}
+@mixin fondheader {
+  background: $colour-primary;
+  color: $colour-secondary;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  height: 120px;
+  width: 100%;
+}
+@mixin fondmenu1234 {
+  box-shadow: 4px 2px 5px 4px #ededed;
+  height: 32em;
+  width: 24em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin fondmenu {
+  height: 100%;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+}
+@mixin titremenu {
+  font-size: 1.7em;
+  display: flex;
+  justify-content: center;
+}
+@mixin titrecontenumenu {
+  font-size: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin pagemenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 85%;
+  width: 80%;
+  box-shadow: 4px 2px 5px 4px #ededed;
+}
+@mixin pagemenutitre {
+  height: 6%;
+  width: 80%;
+  margin-top: -1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*corps de page*/
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  @include fondheader;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  @include fondbody;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+header a {
+  font-weight: bold;
+}
+header a,
+footer a,
+.btn {
+  font-family: "Montserrat", sans-serif;
+  color: $colour-secondary;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+  align-items: center;
+  height: 85px;
+  background: $colour-primary;
+  color: $colour-secondary;
+  font-size: 2em;
+  position: fixed;
+  bottom: 0;
+  width: 76%;
+}
+.margefooter {
+  height: 85px;
+}
+
+.container {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1400px;
+}
+.wizz {
+  &:hover {
+    transform: rotate(25deg);
+    animation: animation-btnfooter alternate ease-in-out both infinite;
+    animation-duration: 0.2s;
+  }
+}
+
+/*page acceuil*/
+
+.menu {
+  @include fondmenu;
+}
+.menu1 {
+  @include fondmenu1234;
+  background: #fcdfdb;
+}
+.M1 {
+  color: #3c1218;
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+  font-style: inherit;
+  font-size: 1.2em;
+}
+.menu2 {
+  @include fondmenu1234;
+  background: #fff5fe;
+}
+.M2 {
+  color: #c77412;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.menu3 {
+  @include fondmenu1234;
+  background: #f9f9f9;
+}
+.M3 {
+  color: #0887fb;
+  font-family: "Kalam", cursive;
+  font-size: 1.5em;
+}
+.menu4 {
+  @include fondmenu1234;
+  background: #fdfffd;
+}
+.M4 {
+  color: #72bf56;
+  font-family: "Kalam", cursive;
+  font-size: 1.5em;
+}
+i {
+  background: linear-gradient(to right, #f04a5e, #f78f6a);
+  @include degradewebkit;
+  font-size: 1.5em;
+}
+.titremenu {
+  transition: 0.5s ease-in-out;
+  &--icon {
+    @include titremenu;
+  }
+  &--contenumenu {
+    @include titrecontenumenu;
+    flex-direction: column;
+  }
+  &--contenumenu2 {
+    @include titrecontenumenu;
+  }
+  &--T {
+    @include titremenu;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+  &--T_M {
+    @include titremenu;
+  }
+  &:hover {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+}
+.note {
+  &--1 {
+    color: #3c1218;
+    font-family: "Devonshire", cursive;
+  }
+  &--2 {
+    background: linear-gradient(to right, #c77412, #905bfd);
+    @include degradewebkit;
+    font-family: "Croissant One", cursive;
+    font-size: 0.8em;
+  }
+  &--3 {
+    background: linear-gradient(to right, #0431df, #0887fb);
+    @include degradewebkit;
+    font-family: "Dancing Script", cursive;
+  }
+  &--4 {
+    background: linear-gradient(to right, #3d9339, #bfff7e);
+    @include degradewebkit;
+    font-family: "Kaushan Script", cursive;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $colour-primary;
+  width: 50%;
+  height: 2em;
+  border-radius: 0.4em;
+  font-size: 2.7em;
+  color: $colour-secondary;
+}
+.petitpoint {
+  margin-left: 0.3em;
+  animation: animation-point 1s ease-in-out alternate forwards infinite;
+}
+
+/*page des menus*/
+
+.noteimghaut {
+  font-size: 2em;
+}
+.noteimgbas {
+  padding-right: 0.3%;
+}
+.titre {
+  &--enchantee {
+    color: #3c1218;
+    font-family: "Devonshire", cursive;
+  }
+  &--enchantee2 {
+    font-family: "Devonshire", cursive;
+    margin-left: 0.2em;
+  }
+  &--chic {
+    background: linear-gradient(to right, #c77412, #905bfd);
+    @include degradewebkit;
+    font-family: "Croissant One", cursive;
+  }
+  &--delice {
+    background: linear-gradient(to right, #0431df, #0887fb);
+    @include degradewebkit;
+    font-family: "Dancing Script", cursive;
+  }
+  &--palette {
+    background: linear-gradient(to right, #3d9339, #bfff7e);
+    @include degradewebkit;
+    font-family: "Kaushan Script", cursive;
+  }
+}
+.containerint {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 95%;
+  width: 90%;
+}
+.menunote {
+  &--note {
+    font-family: "Kalam", cursive;
+    background: #fcdfdb;
+  }
+  &--chic {
+    font-family: "Crimson Text", serif;
+    background: #fff5fe;
+  }
+  &--delice {
+    font-family: "Kalam", cursive;
+    background: #edefef;
+  }
+  &--palette {
+    font-family: "Kalam", cursive;
+    background: #fdfffd;
+  }
+}
+.menutitre {
+  @include pagemenutitre;
+}
+
+.menunote {
+  @include pagemenu;
+  &--1 {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.menuP {
+  display: flex;
+  justify-content: space-between;
+
+  &--plat {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    width: 75%;
+  }
+  &--prix {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 8%;
+    padding-left: 0;
+  }
+}
+.dessert {
+  width: 95%;
+}
+img {
+  width: 17em;
+  height: 3em;
+}
+.box {
+  display: flex;
+  align-items: center;
+  padding-right: 1%;
+  padding-left: 1%;
+  margin-top: -1%;
+}
+.trait {
+  border: 1px solid transparent;
+  white-space: nowrap;
+  height: auto;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  &:hover {
+    animation: anim 1s 0.1s normal ease-in-out forwards;
+  }
+}
+@keyframes anim {
+  0% {
+    width: 0;
+    border-bottom: 1px solid black;
+  }
+  100% {
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+}
+
+/*page menu2*/
+
+.menu2 {
+  &--partie1 {
+    color: #c67412;
+  }
+  &--partie2 {
+    color: #a56799;
+  }
+  &--partie3 {
+    color: #6e4ccc;
+  }
+}
+.gras {
+  font-weight: bold;
+}
+
+/*mentions legales*/
+
+.mentions-legales {
+  justify-content: space-around;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/*mobile et tablette*/
+@media screen and (max-width: 1040px) {
+  body {
+    border: none;
+    width: 100%;
+    height: auto;
+  }
+  .foot {
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .container {
+    height: 1400px;
+  }
+  .menu {
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-items: center;
+    border-bottom: none;
+  }
+  .menu1,
+  .menu2,
+  .menu3,
+  .menu4 {
+    height: 31em;
+    width: 20.5em;
+  }
+  .btn {
+    width: 40%;
+    height: 2em;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 840px) {
+  .menu {
+    flex-direction: column;
+  }
+  .container {
+    height: 2500px;
+  }
+  .titremenu--contenumenu {
+    font-size: 1.3em;
+  }
+  .menuP--plat {
+    padding-left: 0;
+  }
+  .menuP--prix {
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 0;
+  }
+  .btn {
+    width: auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  .containerint {
+    width: 100%;
+  }
+  .titremenu--contenumenu {
+    font-size: 1em;
+  }
+  .menunote--1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 14em;
+    height: 3em;
+  }
+  .img-bas-biencommencer {
+    margin-left: 1.3em;
+  }
+  .img-bas-biencontinuer {
+    width: 13.5em;
+    height: 2.9em;
+  }
+  .foot {
+    font-size: 1em;
+  }
+  .menu1,
+  .menu2,
+  .menu3,
+  .menu4 {
+    height: 26em;
+    width: 18em;
+  }
+  .note--2 {
+    font-size: 0.7em;
+  }
+}

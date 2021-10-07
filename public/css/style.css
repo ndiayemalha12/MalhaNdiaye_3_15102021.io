@@ -1,0 +1,400 @@
+h1 {
+  color: #ffffff;
+}
+
+.btn {
+  background-color: #9356DC;
+}
+.btn:hover {
+  background-color: #99E2D0;
+}
+
+body {
+  font-family: Roboto;
+  background: #f6f6f6;
+}
+
+.flexCentre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexAround {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texteGras {
+  font-weight: #99E2D0;
+}
+
+.colorGris {
+  color: #f2f2f2;
+}
+
+.flexColumnCentre {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColumnAround {
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexColumnBetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SPINNER */
+.spinner-charging {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12vw;
+  color: #9f60e3;
+  animation: loaderOut 1.8s 1 forwards;
+}
+
+.spinner-center {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #FF79DA;
+}
+
+/* HEADER */
+.header {
+  box-shadow: #D3D3D3;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+}
+
+.font-image {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.header-logo {
+  align-items: center;
+  box-shadow: 0 5px 7px -1px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.header-back-link {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  display: inline-block;
+  font-size: 24px;
+  transform: translate(-50%, -50%);
+}
+
+.header-image {
+  height: 35px;
+}
+
+/* localisation */
+.localisation {
+  display: flex;
+  align-items: center;
+  background-color: #D3D3D3;
+}
+
+.localisation-bloc {
+  background-color: #D3D3D3;
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.iconSize {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px 0 0 10px;
+}
+
+.localisation-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  margin-right: 5px;
+  background-color: #D3D3D3;
+}
+
+/* reservation */
+.margreservation {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  margin-top: -14px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.margreservationTitre {
+  border: 2px solid #9356DC;
+  background-color: #f80be8;
+  background: linear-gradient(180deg, #ee74da, #af5fdb);
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+btn-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* fonctionnements */
+.margfonctionnements {
+  margin-top: auto50px;
+  margin-bottom: 40px;
+}
+
+.fonctionnements {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.margfonctionnementsTitre {
+  margin-right: 20px;
+}
+
+.fonctionnementTexteIcons {
+  border: 20px solid #f2f2f2;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.fonctionnementsTexteIcons:hover > .fonctionnementsTexte {
+  background-color: white;
+}
+
+.fonctionnementsTexteIcons:hover > .fonctionnementsIcons {
+  background-color: white;
+}
+
+.fonctionnementsTexte {
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0 25px 25px 0;
+}
+
+.fonctionnementsIcons {
+  margin-left: -2px;
+  border-radius: 25px;
+  width: 52px;
+  height: 52px;
+  color: #9356DC;
+  background-color: #f2f2f2;
+}
+
+/* Restaurants */
+.sizeRestaurants {
+  flex: 2;
+  height: 400px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.flexColumnAround {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Restaurants {
+  margin-top: 20px;
+  background-color: #D3D3D3;
+}
+
+.blocRestaurants {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 300px;
+  padding-left: 20px;
+  padding-right: 20 PX;
+}
+
+.blocNew {
+  position: relative;
+}
+
+i {
+  font-size: 30px;
+  display: none;
+}
+
+i.far {
+  display: block;
+}
+
+/* reglage bloc */
+.cubeRestaurants {
+  width: 90%;
+  border: 50px;
+  border-radius: 30px;
+  margin: 50px;
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+
+.cubeDetailsRestaurants {
+  width: 90%;
+}
+
+/* fin reglage bloc */
+.hauteurTitre {
+  height: 70px;
+}
+
+.titreRestaurants {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5%;
+  width: 95%;
+}
+
+.imgRestaurants1 {
+  background-image: url("../images/restaurants/1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.imgRestaurants2 {
+  background-image: url("../images/restaurants/2.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.imgRestaurants3 {
+  background-image: url("../images/restaurants/3.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.imgRestaurants4 {
+  background-image: url("../images/restaurants/4.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.cubeDetailsRestaurants {
+  width: 80%;
+}
+
+/* reglage bloc */
+.bloc {
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cubeDetailsRestaurants {
+  width: 90%;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 25px 30px;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+footer li {
+  color: white;
+  font-family: "Roboto";
+  line-height: 1.7rem;
+  list-style-type: none;
+}
+footer i {
+  margin-right: 10px;
+}
+
+@media (min-width: 1200px) {
+  footer h3 {
+    margin-left: 40px;
+  }
+}
+@keyframes spinner-charging {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/*# sourceMappingURL=ohmyfood.css.map */

@@ -1,0 +1,214 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$third-color: #99E2D0;
+$h1-color: #ffffff;
+$fuchsia_f80be8: #fd3f92;
+$black_000: #000000;
+
+header-logo {
+  align-items: center;
+  box-shadow: 0 5px 7px -1px #cfcfcf;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  position: relative;
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+.header-image {
+  height: 35px;
+}
+.header-logo .header-back-link {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  display: inline-block;
+  font-size: 24px;
+  transform: translate(-50%, -50%);
+}
+.font-image {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-collapse: separate;
+  overflow: hidden;
+  perspective: 1px;
+  border-radius: 50px 50px 0 0;
+  margin-top: -60px;
+  padding-top: 24px;
+}
+.menu-header {
+  position: relative;
+}
+.menu-title {
+  font-family: "Shrikhand";
+  padding-left: 25px;
+  font-size: 30px;
+  max-width: calc(100% - 89px);
+}
+.menu-fav {
+  position: absolute;
+  right: 55px;
+  top: 5px;
+}
+.menu-fav input {
+  display: none;
+}
+.menu-fav label {
+  cursor: pointer;
+}
+.menu-fav i.far {
+  display: block;
+}
+.menu-fav i {
+  font-size: 30px;
+  color: #444;
+  display: none;
+}
+.fa, .far, .fas {
+  font-family: "Font Awesome 5 Free";
+}
+.fab, .far {
+  font-weight: 400;
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.menu-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.menu-types {
+  font-family: "Roboto";
+  margin-left: 15px;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 5px;
+  width: 40px;
+}
+
+.choice-block {
+  display: flex;
+  background-color: white;
+  border-radius: 14px;
+  margin: 0 auto 10px;
+  padding: 10px 30px 10px 15px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: padding 0.5s;
+  animation: fadeUp 0.8s 1 ease forwards;
+  opacity: 0;
+}
+.choice-block-text {
+  font-family: Roboto, sans-serif;
+  color: #000000;
+  flex-grow: 1;
+  padding-right: 5px;
+}
+.choice-block-text h4 {
+  font-weight: bold;
+  margin: 5px 0;
+}
+.choice-block-text p {
+  font-weight: normal;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.choice-block-text p .price {
+  font-weight: bold;
+  display: inline-block;
+}
+.choice-block-checkbox {
+  display: none;
+}
+.choice-block-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 21px;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.choice-block:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.choice-block:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.command-button {
+  align-content: center;
+  background-color: #f80be8;
+  background: linear-gradient(180deg, #ee74da, #af5fdb);
+  border: 1px solid transparent;
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+
+font-weight: 500;
+justify-content: center;
+margin: 30px auto 60px;
+padding: 15px 30px;
+box-shadow: 2px 4px 6px rgb(0 0 0 / 25%);
+font-size: 20px;
+max-width: 220px;
+cursor: pointer;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 25px 30px;
+
+  h3 {
+    font-family: 'Shrikhand';
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 13px;
+  }
+
+  li {
+    color: white;
+    font-family: 'Roboto';
+    line-height: 1.7rem;
+    list-style-type: none;
+  }
+
+  i {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1200px)
+{
+  footer h3
+  {
+    margin-left: 40px;
+  }
+}

@@ -1,0 +1,85 @@
+@import "../utils/variabless";
+
+.reservation-bouton {
+  align-content: center;
+  background-color: #f80be8;
+  background: linear-gradient(180deg, #ee74da, #af5fdb);
+  border: 1px solid transparent;
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  justify-content: center;
+  margin: auto;
+  padding: 15px 30px;
+  box-shadow: 2px 4px 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fonctionnement-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  color: #000000;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  margin: auto;
+  padding: 25px 40px 24px 40px;
+  text-align: center;
+  width: 80%;
+  box-shadow: 7px 7px 11px 0px;
+  position: relative;
+  cursor: default;
+}
+
+.command-button 
+{
+  align-content: center;
+  background-color: $fuchsia_f80be8;
+  background: linear-gradient(180deg, #ee74da, #af5fdb);
+  border: 1px solid transparent;
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  justify-content: center;
+  margin: 30px auto 60px;
+  padding: 15px 30px;
+  box-shadow: 2px 4px 6px rgb(0 0 0 / 25%);
+  font-size: 20px;
+  max-width: 220px;
+  cursor: pointer;
+}
+
+.numbers {
+  position: absolute;
+  background-color: #9356dc;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 100%;
+  margin-right: 300px;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 320px) and (max-width: 340px) 
+{
+  .fonctionnement-button 
+  {
+    margin: auto 20px auto;
+  }
+}
+@media screen and (min-width: 768px) 
+{
+  .fonctionnement-button 
+  {
+    min-width: 300px;
+    flex-basis: 80%;
+  }
+}

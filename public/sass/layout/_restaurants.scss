@@ -1,0 +1,77 @@
+.restaurants {
+  background: #f6f6f6;
+  padding: 20px;
+}
+.restaurants-title {
+  display: inline-block;
+  font-family: "Roboto";
+  margin-left: 15px;
+  margin-top: 40px;
+}
+.restaurants-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.restaurants-blocks.new-block {
+  position: relative;
+}
+.restaurants-block a {
+  display: contents;
+  height: 100%;
+  background-color: #fff;
+}
+.restaurants-block img {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  width: 40%;
+}
+.restaurants-description {
+  background: white;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  font-family: "Roboto";
+  text-align: center;
+  width: 38%;
+  padding: 15px 15px 5px;
+  min-height: 70px;
+  position: relative;
+}
+.restaurants-description h3 {
+  margin: 0;
+}
+.restaurants-description p {
+  text-align: left;
+}
+.restaurants-fav {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+}
+.restaurants-fav input {
+  display: none;
+}
+.restaurants-fav i.far {
+  display: block;
+}
+.restaurants-fav i {
+  font-size: 30px;
+  color: #B461DB;
+  display: none;
+}
+.fa,.fas{
+  font-weight: 900;
+}
+.fa, .far, .fas {
+  font-family: "Font Awesome 5 Free";
+}
+.fab, .far {
+  font-weight: 400;
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  text-rendering: auto;
+  line-height: 1;
+}

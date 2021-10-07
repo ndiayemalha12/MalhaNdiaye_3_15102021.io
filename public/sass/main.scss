@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  background: #f6f6f6;
+}
+@import "./utils/_variables";
+@import "./utils/_polices";
+@import "./utils/_animations";
+
+
+@import "./components/_buttons";
+
+@import "./layout/_header";
+@import "./layout/_fonctionnements";
+@import "./layout/_footer";
+@import "./layout/_localisation";
+@import "./layout/_reservation";
+@import "./layout/_restaurants";
+
+@import "./pages/_header";
+@import "./pages/_menu";
