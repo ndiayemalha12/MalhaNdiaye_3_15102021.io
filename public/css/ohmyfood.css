@@ -270,7 +270,6 @@ a {
 }
 
 .restaurants-block {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -303,7 +302,7 @@ a {
   position: absolute;
   right: 15px;
   top: 20px;
-  background: #99E2D0;
+  background: #99e2d0;
   color: #008766;
   padding: 8px 13px;
   font-family: "Roboto", sans-serif;
@@ -350,7 +349,7 @@ a {
 
 .restaurants-fav i {
   font-size: 30px;
-  color: #B461DB;
+  color: #b461db;
   display: none;
 }
 
