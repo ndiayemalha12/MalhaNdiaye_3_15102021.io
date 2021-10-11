@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
+  border-radius: inherit;
 }
 
 body {
@@ -270,6 +270,7 @@ a {
 }
 
 .restaurants-block {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -510,6 +511,7 @@ footer i {
 
 .menu-blocks {
   display: flex;
+  object-fit: cover;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;

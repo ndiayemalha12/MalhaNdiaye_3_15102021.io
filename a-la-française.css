@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -16,6 +17,7 @@ body {
   padding-top: 20px;
   position: relative;
 }
+
 .header-logo .header-back-link {
   position: absolute;
   top: 50%;
@@ -84,6 +86,7 @@ body {
   position: relative;
   cursor: default;
 }
+
 .fonctionnement-button:hover {
   background-color: #f5edff;
 }
@@ -277,11 +280,13 @@ a {
   margin: 20px;
   overflow: hidden;
 }
+
 .restaurants-block img {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
   width: 100%;
 }
+
 .restaurants-block a {
   display: contents;
   height: 100%;
@@ -291,6 +296,7 @@ a {
 .restaurants-block.new-block {
   position: relative;
 }
+
 .restaurants-block.new-block::before {
   content: "Nouveau";
   position: absolute;
@@ -314,9 +320,11 @@ a {
   min-height: 70px;
   position: relative;
 }
+
 .restaurants-description h3 {
   margin: 0;
 }
+
 .restaurants-description p {
   text-align: left;
 }
@@ -326,37 +334,38 @@ a {
   right: 15px;
   top: 25px;
 }
+
 .restaurants-fav input {
   display: none;
 }
+
 .restaurants-fav input:checked + label i.far {
   display: none;
 }
+
 .restaurants-fav input:checked + label i.fas {
   display: block;
 }
+
 .restaurants-fav i {
   font-size: 30px;
   color: #b461db;
   display: none;
 }
+
 .restaurants-fav i.far {
   display: block;
 }
+
 .restaurants-fav input:checked + label i.far {
   position: absolute;
   opacity: 0;
   transition: opacity 0.2s 0.5s;
 }
+
 .restaurants-fav input:checked + label i.fas {
   display: block;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ee6fda),
-    to(#b85ada)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#ee6fda), to(#b85ada));
   background: -o-linear-gradient(#ee6fda, #b85ada);
   background: linear-gradient(#ee6fda, #b85ada);
   -webkit-background-clip: text;
@@ -408,18 +417,21 @@ footer {
   color: white;
   padding: 20px 25px 30px;
 }
+
 footer h3 {
   font-family: "Shrikhand";
   font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 13px;
 }
+
 footer li {
   color: white;
   font-family: "Roboto";
   line-height: 1.7rem;
   list-style-type: none;
 }
+
 footer i {
   margin-right: 10px;
 }
@@ -461,23 +473,29 @@ footer i {
   right: 55px;
   top: 5px;
 }
+
 .menu-fav input {
   display: none;
 }
+
 .menu-fav label {
   cursor: pointer;
 }
+
 .menu-fav i {
   font-size: 30px;
   color: #444;
   display: none;
 }
+
 .menu-fav i.far {
   display: block;
 }
+
 .menu-fav input:checked + label i.far {
   display: none;
 }
+
 .menu-fav input:checked + label i.fas {
   display: block;
 }
@@ -512,24 +530,30 @@ footer i {
   animation: fadeUp 0.8s 1 ease forwards;
   opacity: 0;
 }
+
 .choice-block:hover {
   padding-right: 60px;
 }
+
 .choice-block:hover .choice-block-icon {
   width: 60px;
   opacity: 1;
 }
+
 .choice-block:hover .choice-block-icon i {
   transition: 0.5s;
   transition-delay: 0.1s;
   transform: rotate(360deg);
 }
+
 .choice-block:nth-child(3) {
   animation-delay: 0.2s;
 }
+
 .choice-block:nth-child(4) {
   animation-delay: 0.4s;
 }
+
 .choice-block:nth-child(5) {
   animation-delay: 0.6s;
 }
@@ -540,16 +564,19 @@ footer i {
   flex-grow: 1;
   padding-right: 5px;
 }
+
 .choice-block-text h4 {
   font-weight: bold;
   margin: 5px 0;
 }
+
 .choice-block-text p {
   font-weight: normal;
   margin: 5px 0;
   display: flex;
   justify-content: space-between;
 }
+
 .choice-block-text p .price {
   font-weight: bold;
   display: inline-block;
@@ -575,10 +602,12 @@ footer i {
 .choice-block-checkbox {
   display: none;
 }
+
 .choice-block-checkbox:checked + .choice-block-icon {
   width: 60px;
   opacity: 1;
 }
+
 .choice-block-checkbox:checked + .choice-block-icon i {
   transform: rotate(360deg);
 }
@@ -620,3 +649,5 @@ footer i {
     transform: scale(1);
   }
 }
+
+/*# sourceMappingURL=a-la-fran%C3%A7aise.css.map */

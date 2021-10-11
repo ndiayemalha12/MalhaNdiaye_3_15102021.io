@@ -1,19 +1,20 @@
 {
-  "name": "writing-sass",
+  "name": "sass",
   "version": "1.0.0",
-  "description": "Joe Blow's portfolio",
+  "description": "projet 3 openclassrooms",
   "main": "index.js",
+  "dependencies": {
+     "sass": "^1/38.1"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch public/scss:public/css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+    "url": "aa"
   },
-  "author": "gerkx",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
-  },
-  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme"
+  "author": "ndiayemalha12",
+  "license": "ISC"
 }
+  
