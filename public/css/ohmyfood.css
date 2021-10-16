@@ -523,13 +523,14 @@ footer i {
   margin: 0 auto 10px;
   padding: 10px 30px 10px 15px;
   width: 90%;
-  max-width: 450px;
+  max-width: 384px;
   box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
   transition: padding 0.5s;
   animation: fadeUp 0.8s 1 ease forwards;
   opacity: 0;
+  text-overflow: ellipsis;
 }
 
 .choice-block:hover {
@@ -576,6 +577,7 @@ footer i {
   margin: 5px 0;
   display: flex;
   justify-content: space-between;
+  text-overflow: ellipsis;
 }
 
 .choice-block-text p .price {
