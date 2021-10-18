@@ -505,14 +505,13 @@ footer i {
   margin: 0 auto 10px;
   padding: 10px 30px 10px 15px;
   width: 90%;
-  max-width: 384px;
+  max-width: 392px;
   box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
   transition: padding 0.5s;
   animation: fadeUp 0.8s 1 ease forwards;
   opacity: 0;
-  text-overflow: ellipsis;
 }
 .choice-block:hover {
   padding-right: 60px;
@@ -527,9 +526,11 @@ footer i {
   transform: rotate(360deg);
 }
 .choice-block:nth-child(3) {
+  text-overflow: ellipsis;
   animation-delay: 0.2s;
 }
 .choice-block:nth-child(4) {
+  text-overflow: ellipsis;
   animation-delay: 0.4s;
 }
 .choice-block:nth-child(5) {
@@ -551,7 +552,6 @@ footer i {
   margin: 5px 0;
   display: flex;
   justify-content: space-between;
-  text-overflow: ellipsis;
 }
 .choice-block-text p .price {
   font-weight: bold;
